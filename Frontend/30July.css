@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    background-color: aquamarine;
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: red;
+    color: white;
+    font-size: 40px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+
+    /* transform: scale(0.3); */
+
+    /* transform: rotate(30deg); */
+    transform: rotate(0.75turn);
+    
+    /* transform: skew(30deg); */
+    transform: skew(30deg , 20deg);
+
+    /* transform: translateX(40px);
+    transform: translateY(40px); */
+    /* transform: translateZ(20px); */
+    transform: translateZ(20px ,40px, 30px );
+
+   /* 3D */
+   transform: perspective(500px) rotateX(40deg) ;
+   transform: perspective(500px) rotateY(40deg) ;
+   transform: perspective(500px) rotateZ(40deg) ;
+
+}
