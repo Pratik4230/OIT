@@ -20,17 +20,38 @@ body{
 }
 
 .container {
-    position: relative;
+    /* position: relative; */
     height: 600px;
     width: 600px;
     background-color: aquamarine;
 }
 
 .ball{
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: 520px;
     height: 80px;
     width: 80px;
     background-color: red;
     border-radius: 50%;
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: run 3s  ease-out 1s infinite  alternate backwards,
+               fun 3s  ease-out 1s infinite  alternate backwards ;
+}
+
+@keyframes run {
+    from {
+        transform: translate(0px);
+    }
+        to {
+            transform: translateY(-680px);
+        }
+
+    }
+@keyframes fun {
+    from {
+      
+    }
+        to {
+            transform: translateX(120px);
+        }
 }
