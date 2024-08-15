@@ -52,10 +52,6 @@ let y = 12;
 
 let i;
 
-if (x == y) {
-  return x;
-}
-
 x > y ? (i = y) : (i = x);
 
 for (i; i >= 1; i--) {
