@@ -28,3 +28,16 @@ const hey = function () {
 (function(){
     console.log("✅✅✅✅");
 })();
+
+/////////////////
+arguments - Object
+function add() {
+    let sum = 0;
+    console.log("length" , arguments.length);
+    for(let i = 0 ; i < arguments.length ; i++){
+        sum += arguments[i]
+    }
+    console.log("sum" ,sum);
+    
+}
+add(2,54,7,8)
